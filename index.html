@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Sachin Saravanan | Aspiring Full Stack Developer & Data Analytics Enthusiast</title>
+  <meta name="title" content="Sachin Saravanan | Aspiring Full Stack Developer & Data Analytics Enthusiast">
+  <meta name="description" content="Portfolio of Sachin Saravanan — B.Tech IT student at Rathinam Technical Campus. Aspiring Full Stack Developer with passion for web development, databases, and data analytics.">
+  <meta name="keywords" content="Sachin Saravanan, Full Stack Developer, Data Analytics, Portfolio, Web Development, Rathinam Technical Campus, Python, Java, React, JavaScript, PostgreSQL, MongoDB">
+  <meta name="author" content="Sachin Saravanan">
+  <meta name="theme-color" content="#0a192f">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sachin Saravanan | Aspiring Full Stack Developer">
+  <meta property="og:description" content="Explore projects, technical skills, academic background, and resume of Sachin Saravanan.">
+  <meta property="og:image" content="assets/images/sachins.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230a192f'/><text x='50' y='63' font-size='42' font-weight='bold' font-family='sans-serif' fill='%2338bdf8' text-anchor='middle'>SS</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <!-- Brand Logo -->
+        <a href="#home" class="nav-brand" aria-label="Sachin Saravanan Home">
+          <span class="brand-monogram">SS</span>
+          <span class="brand-text">Sachin<span class="brand-dot">.dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="navLinks" role="menubar">
+          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+          <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#certificates" class="nav-link" role="menuitem">Certificates</a></li>
+          <li role="none"><a href="#resume" class="nav-link" role="menuitem">Resume</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <!-- Nav Action: Quick Resume / Connect & Mobile Hamburger -->
+        <div class="nav-actions">
+          <a href="assets/resume/Sachin_Saravanan_Resume.pdf" download="Sachin_Saravanan_Resume.pdf" class="btn btn-nav-cta" aria-label="Download Sachin's Resume">
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </a>
+
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+    
+    <!-- ==============================================
+         1. HERO SECTION
+         ============================================== -->
+    <section id="home" class="hero-section" aria-label="Hero Section">
+      <!-- Decorative Ambient Elements -->
+      <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-badge reveal-hero">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for Opportunities & Internships</span>
+          </div>
+
+          <p class="hero-greeting reveal-hero">Hi, I'm</p>
+
+          <h1 class="hero-name reveal-hero">
+            SACHIN <span class="text-gradient">SARAVANAN</span>
+          </h1>
+
+          <!-- Animated Dynamic Headline -->
+          <div class="hero-headline-wrapper reveal-hero">
+            <span class="hero-headline-static">I am an </span>
+            <span class="hero-headline-dynamic" id="typingText">Aspiring Full Stack Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+            <span class="sr-only">Aspiring Full Stack Developer | Data Analytics Enthusiast</span>
+          </div>
+
+          <!-- Supporting Text -->
+          <p class="hero-description reveal-hero">
+            I enjoy building practical web applications, working with databases, and exploring data-driven solutions. I am continuously learning new technologies and improving my problem-solving skills to become a skilled Full Stack Developer.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group reveal-hero">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <a href="assets/resume/Sachin_Saravanan_Resume.pdf" download="Sachin_Saravanan_Resume.pdf" class="btn btn-secondary" id="heroResumeBtn">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-social-links reveal-hero" aria-label="Social Profiles">
+            <a href="https://github.com/sachinsaravanan54" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sachinsaravanan54/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/jeffy_forever_07/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="mailto:sachin2605srs@gmail.com" class="social-icon-btn" aria-label="Send Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Profile Image Column -->
+        <div class="hero-visual reveal-hero">
+          <div class="profile-frame">
+            <!-- Decorative rotating/pulsing ring -->
+            <div class="profile-glow-ring" aria-hidden="true"></div>
+            <div class="profile-glow-ring-inner" aria-hidden="true"></div>
+            
+            <div class="profile-image-wrapper">
+              <img src="assets/images/sachins.jpg" alt="Sachin Saravanan - Aspiring Full Stack Developer" class="profile-img" width="380" height="380" loading="eager">
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="hero-floating-card floating-card-1" aria-hidden="true">
+              <div class="floating-card-icon">🎓</div>
+              <div class="floating-card-content">
+                <span class="floating-card-title">B.Tech IT</span>
+                <span class="floating-card-sub">Rathinam Campus</span>
+              </div>
+            </div>
+
+            <div class="hero-floating-card floating-card-2" aria-hidden="true">
+              <div class="floating-card-icon">⚡</div>
+              <div class="floating-card-content">
+                <span class="floating-card-title">Full Stack</span>
+                <span class="floating-card-sub">& Data Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. ABOUT ME SECTION
+         ============================================== -->
+    <section id="about" class="section about-section" aria-label="About Me Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>GET TO KNOW ME</span>
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated to creating reliable, purposeful, and intuitive digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Text Column -->
+          <div class="about-bio-card reveal">
+            <h3 class="bio-title">Crafting Solutions with Logic & Continuous Learning</h3>
+            
+            <div class="bio-text">
+              <p>
+                I am a B.Tech Information Technology student at Rathinam Technical Campus with a strong interest in Full Stack Development and Data Analytics. I enjoy building practical web applications, working with databases, and exploring technologies that solve real-world problems.
+              </p>
+              <p>
+                My technical skills include Java, Python, HTML, CSS, JavaScript, PostgreSQL, MongoDB, Microsoft Excel, and Power BI. I value logical thinking and quick learning, and I continuously improve my knowledge through hands-on projects and technical learning.
+              </p>
+              <p>
+                My career goal is to become a skilled Full Stack Developer and contribute to building reliable, useful, and user-friendly applications.
+              </p>
+            </div>
+
+            <!-- Strengths Highlights -->
+            <div class="strengths-box">
+              <h4 class="strengths-title">Core Strengths</h4>
+              <div class="strengths-tags">
+                <span class="strength-chip">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Logical Thinking
+                </span>
+                <span class="strength-chip">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Quick Learning
+                </span>
+                <span class="strength-chip">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Problem Solving
+                </span>
+                <span class="strength-chip">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Continuous Growth
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Information Cards Column -->
+          <div class="about-info-column">
+            <div class="info-card reveal">
+              <div class="info-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <span class="info-card-label">Degree & College</span>
+                <p class="info-card-value">B.Tech Information Technology</p>
+                <p class="info-card-detail">Rathinam Technical Campus (2024–2028)</p>
+              </div>
+            </div>
+
+            <div class="info-card reveal">
+              <div class="info-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <span class="info-card-label">Languages Known</span>
+                <p class="info-card-value">Tamil & English</p>
+                <p class="info-card-detail">Native Tamil • Professional English</p>
+              </div>
+            </div>
+
+            <div class="info-card reveal">
+              <div class="info-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <span class="info-card-label">Current Academic Standing</span>
+                <p class="info-card-value">CGPA: 7.84</p>
+                <p class="info-card-detail">Consistent performance & practical application</p>
+              </div>
+            </div>
+
+            <div class="info-card reveal">
+              <div class="info-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="info-card-text">
+                <span class="info-card-label">Primary Career Objective</span>
+                <p class="info-card-value">Full Stack Developer</p>
+                <p class="info-card-detail">Frontend UI, Backend APIs, Relational & NoSQL Data</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. EDUCATION SECTION
+         ============================================== -->
+    <section id="education" class="section education-section" aria-label="Education Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>ACADEMIC FOUNDATION</span>
+          </div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">A progressive academic background rooted in information technology and analytical rigor.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-track" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-period">2024 — 2028</span>
+                <span class="timeline-badge badge-active">Currently Pursuing</span>
+              </div>
+              <h3 class="timeline-degree">B.Tech in Information Technology</h3>
+              <h4 class="timeline-institution">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Rathinam Technical Campus
+              </h4>
+              <p class="timeline-description">
+                Focusing on core computer science subjects, software engineering principles, full stack web development architectures, database systems, and data analytics methodologies.
+              </p>
+              <div class="timeline-score">
+                <span class="score-label">Current Academic Standing:</span>
+                <span class="score-value">CGPA 7.84</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-period">2023 — 2024</span>
+                <span class="timeline-badge badge-completed">Completed</span>
+              </div>
+              <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+              <h4 class="timeline-institution">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                RKV Matric Higher Secondary School
+              </h4>
+              <p class="timeline-description">
+                Completed higher secondary education with a rigorous focus on science and mathematics, building a strong base for algorithmic thinking and technical problem solving.
+              </p>
+              <div class="timeline-score">
+                <span class="score-label">Graduation Score:</span>
+                <span class="score-value">84%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-period">2021 — 2022</span>
+                <span class="timeline-badge badge-completed">Completed</span>
+              </div>
+              <h3 class="timeline-degree">Secondary School Leaving Certificate (SSLC)</h3>
+              <h4 class="timeline-institution">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                RKV Matric Higher Secondary School
+              </h4>
+              <p class="timeline-description">
+                Developed fundamental academic excellence and disciplinary habits, excelling across core science, mathematics, and language curricula.
+              </p>
+              <div class="timeline-score">
+                <span class="score-label">Graduation Score:</span>
+                <span class="score-value">92.8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. TECHNICAL SKILLS SECTION
+         ============================================== -->
+    <section id="skills" class="section skills-section" aria-label="Technical Skills Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>CAPABILITIES & TOOLSET</span>
+          </div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Verified programming languages, frontend technologies, database systems, and analytical tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="skill-name">Java</span>
+                <span class="skill-tag">OOP & Core</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Python</span>
+                <span class="skill-tag">Scripting & Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend Development -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Development</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-tag">Semantic Web</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">CSS3</span>
+                <span class="skill-tag">Responsive & Flex/Grid</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-tag">ES6+ & DOM</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">React.js</span>
+                <span class="skill-tag">Component UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Databases & Storage</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-tag">Relational SQL</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-tag">NoSQL Document Store</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-tag">Realtime / Auth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Data Analytics -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Data Analytics</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="skill-name">Microsoft Excel</span>
+                <span class="skill-tag">Formulas & Analysis</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Power BI</span>
+                <span class="skill-tag">Dashboard Visualization</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Data Fundamentals</span>
+                <span class="skill-tag">Insights & Aggregation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Tools & Platforms -->
+          <div class="skill-category-card reveal full-width-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools & Development Platforms</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="skill-name">Git</span>
+                <span class="skill-tag">Version Control</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-tag">Collaboration & CI/CD</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-tag">Code Editor</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Vercel</span>
+                <span class="skill-tag">Cloud Deployment</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. PROJECTS SECTION
+         ============================================== -->
+    <section id="projects" class="section projects-section" aria-label="Projects Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>PORTFOLIO SHOWCASE</span>
+          </div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Practical applications demonstrating web development, databases, and problem-solving.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: BUSORA -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/busora-preview.png" alt="Busora Real-Time Public Transport Tracking System Dashboard" class="project-img" loading="lazy" width="600" height="340">
+              <div class="project-image-overlay">
+                <a href="https://busora.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Launch Busora Live Demo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Launch Live Demo</span>
+                </a>
+              </div>
+              <span class="project-domain-badge">Transport & IoT</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">
+                Busora — Real-Time Public Transport Tracking System
+              </h3>
+              
+              <p class="project-desc">
+                A public transport tracking project intended to improve access to bus location information and estimated arrival times, particularly for passengers in smaller cities.
+              </p>
+
+              <div class="project-features">
+                <span class="features-label">Key Highlights & Concepts:</span>
+                <ul class="features-list">
+                  <li>GPS-based bus tracking & estimated arrival times (ETA)</li>
+                  <li>Real-time location updates on interactive maps</li>
+                  <li>Lightweight web app designed for low-bandwidth conditions</li>
+                  <li>Centralized transport monitoring dashboard</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Firebase</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://busora.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <span class="repo-status-chip" title="Repository is private or being finalized">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>Repo Private</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: POST-DISCHARGE PSYCHIATRIC CARE -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/psychiatric-care-preview.png" alt="Post-Discharge Psychiatric Care Management System Interface" class="project-img" loading="lazy" width="600" height="340">
+              <div class="project-image-overlay">
+                <a href="https://sachinsaravanan54.github.io/Post-Discharge_Psychiatric_Care/" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Launch Post-Discharge Care System Live Demo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Launch Live Demo</span>
+                </a>
+              </div>
+              <span class="project-domain-badge">Healthcare Care Coordination</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">
+                Post-Discharge Psychiatric Care Management System
+              </h3>
+              
+              <p class="project-desc">
+                A care coordination prototype designed to support post-discharge follow-ups and continuity of care for psychiatric patients, built with privacy-conscious data practices.
+              </p>
+
+              <div class="project-features">
+                <span class="features-label">Key Highlights & Concepts:</span>
+                <ul class="features-list">
+                  <li>Follow-up ownership and scheduling due dates</li>
+                  <li>Overdue follow-up tracking and alert mechanisms</li>
+                  <li>Goal-based outcome tracking and baseline comparisons</li>
+                  <li>Non-clinical prototype utilizing synthetic evaluation data</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">GitHub Pages</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://sachinsaravanan54.github.io/Post-Discharge_Psychiatric_Care/" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/sachinsaravanan54/Post-Discharge_Psychiatric_Care.git" target="_blank" rel="noopener noreferrer" class="btn btn-card-secondary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: SMART TNEA COLLEGE FINDER -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/tnea-college-finder-preview.png" alt="Smart TNEA College Finder and Admission Guidance Portal" class="project-img" loading="lazy" width="600" height="340">
+              <div class="project-image-overlay">
+                <a href="https://sachinsaravanan54.github.io/TNEA_Counselling/dashboard.html" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Launch TNEA College Finder Demo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Launch Live Demo</span>
+                </a>
+              </div>
+              <span class="project-domain-badge">EdTech & Guidance</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">
+                Smart TNEA College Finder & Admission Portal
+              </h3>
+              
+              <p class="project-desc">
+                A college discovery and admission guidance tool engineered to help engineering aspirants in Tamil Nadu explore institution options based on cutoff scores and community filters.
+              </p>
+
+              <div class="project-features">
+                <span class="features-label">Key Highlights & Concepts:</span>
+                <ul class="features-list">
+                  <li>TNEA cutoff-based college suggestions & sorting</li>
+                  <li>Community selection (OC, BC, BCM, MBC, SC, SCA, ST)</li>
+                  <li>District and engineering department filtering</li>
+                  <li>Budget preference & management quota information</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Responsive UI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://sachinsaravanan54.github.io/TNEA_Counselling/dashboard.html" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <span class="repo-status-chip" title="Repository link will be made public upon release">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Repo Coming Soon</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: SRI SARAVANA HOTEL -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/saravana-hotel-preview.png" alt="Sri Saravana Hotel Restaurant Website and Menu Interface" class="project-img" loading="lazy" width="600" height="340">
+              <div class="project-image-overlay">
+                <a href="https://sachinsaravanan54.github.io/Saravana_Hotel/" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Launch Sri Saravana Hotel Live Demo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Launch Live Demo</span>
+                </a>
+              </div>
+              <span class="project-domain-badge">Restaurant & E-Commerce UI</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">
+                Sri Saravana Hotel — Restaurant Website
+              </h3>
+              
+              <p class="project-desc">
+                A responsive restaurant web platform showcasing traditional South Indian cuisine, full menu presentation, visual dish galleries, interactive cart UI, and customer contact details.
+              </p>
+
+              <div class="project-features">
+                <span class="features-label">Key Highlights & Concepts:</span>
+                <ul class="features-list">
+                  <li>Authentic restaurant brand presentation & food galleries</li>
+                  <li>Interactive categorized menu browsing actions</li>
+                  <li>Client-side shopping cart interface</li>
+                  <li>Customer reviews and location/contact integration</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Modern UX</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://sachinsaravanan54.github.io/Saravana_Hotel/" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <span class="repo-status-chip" title="Repository link will be made public upon release">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Repo Coming Soon</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. CERTIFICATES SECTION
+         ============================================== -->
+    <section id="certificates" class="section certificates-section" aria-label="Certificates Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>LEARNING & CREDENTIALS</span>
+          </div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Verified professional courses and technical skill milestones.</p>
+        </div>
+
+        <div class="certificates-grid">
+          
+          <!-- Certificate 1: MongoDB Basics -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-header">
+              <div class="cert-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Completed Course</span>
+            </div>
+            
+            <h3 class="cert-title">MongoDB Basics</h3>
+            <p class="cert-provider">MongoDB University</p>
+            <p class="cert-desc">
+              Core curriculum covering document model fundamentals, NoSQL schema principles, basic CRUD operations, and index optimization.
+            </p>
+
+            <div class="cert-file-status">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Certificate PDF Pending Upload (assets/certificates/mongodb-basics.pdf)</span>
+            </div>
+          </div>
+
+          <!-- Certificate 2: Joy of Computing using Python - NPTEL -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-header">
+              <div class="cert-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Completed Course</span>
+            </div>
+            
+            <h3 class="cert-title">The Joy of Computing using Python</h3>
+            <p class="cert-provider">NPTEL — National Programme on Technology Enhanced Learning</p>
+            <p class="cert-desc">
+              Comprehensive course emphasizing computational thinking, Python programming paradigms, algorithmic problem-solving, and practical logic implementation.
+            </p>
+
+            <div class="cert-file-status">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Certificate PDF Pending Upload (assets/certificates/joy-of-computing-nptel.pdf)</span>
+            </div>
+          </div>
+
+          <!-- Certificate 3: Internet of Things (IoT) -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-header">
+              <div class="cert-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Completed Course</span>
+            </div>
+            
+            <h3 class="cert-title">Internet of Things (IoT)</h3>
+            <p class="cert-provider">Technical Coursework</p>
+            <p class="cert-desc">
+              Coursework exploring connected sensors, microcontrollers, embedded data communication protocols, and cloud IoT architectures.
+            </p>
+
+            <div class="cert-file-status">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Certificate PDF Pending Upload (assets/certificates/iot-course.pdf)</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. RESUME SECTION
+         ============================================== -->
+    <section id="resume" class="section resume-section" aria-label="Resume Section">
+      <div class="container">
+        <div class="resume-card reveal">
+          <div class="resume-content-left">
+            <div class="section-tag">
+              <span class="tag-line"></span>
+              <span>CURRICULUM VITAE</span>
+            </div>
+            <h2 class="resume-title">Download My Resume</h2>
+            <p class="resume-desc">
+              Get an in-depth summary of my education at Rathinam Technical Campus, technical skill sets, hands-on projects, and career aspirations in full stack development.
+            </p>
+
+            <div class="resume-meta-list">
+              <div class="meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Format: <strong>Verified PDF Document</strong></span>
+              </div>
+              <div class="meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Updated for <strong>2024–2028 Academic Period</strong></span>
+              </div>
+              <div class="meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Direct relative link: <code>assets/resume/Sachin_Saravanan_Resume.pdf</code></span>
+              </div>
+            </div>
+
+            <!-- Download & View Buttons -->
+            <div class="resume-buttons-group">
+              <a href="assets/resume/Sachin_Saravanan_Resume.pdf" download="Sachin_Saravanan_Resume.pdf" class="btn btn-primary" id="downloadResumeBtn">
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <a href="assets/resume/Sachin_Saravanan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View in New Tab</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Document Preview Visual Card -->
+          <div class="resume-preview-box" aria-hidden="true">
+            <div class="preview-page">
+              <div class="page-top-bar">
+                <span class="preview-name">SACHIN SARAVANAN</span>
+                <span class="preview-title">B.Tech IT | Rathinam Technical Campus</span>
+              </div>
+              <div class="page-skeleton-lines">
+                <div class="skeleton-line full"></div>
+                <div class="skeleton-line half"></div>
+                <div class="skeleton-divider"></div>
+                <div class="skeleton-line three-quarter"></div>
+                <div class="skeleton-line full"></div>
+                <div class="skeleton-line half"></div>
+                <div class="skeleton-divider"></div>
+                <div class="skeleton-badge-row">
+                  <div class="skeleton-badge"></div>
+                  <div class="skeleton-badge"></div>
+                  <div class="skeleton-badge"></div>
+                </div>
+              </div>
+              <div class="preview-badge-overlay">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Sachin_Saravanan_Resume.pdf</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         8. CONTACT SECTION
+         ============================================== -->
+    <section id="contact" class="section contact-section" aria-label="Contact Section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-line"></span>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Interested in discussing a project, internship opportunity, or technical collaboration? Let's talk.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Cards List -->
+          <div class="contact-methods-column">
+            
+            <!-- Email Card -->
+            <div class="contact-card reveal">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Direct Email</span>
+                <a href="mailto:sachin2605srs@gmail.com" class="contact-card-link">sachin2605srs@gmail.com</a>
+                <div class="contact-card-actions">
+                  <a href="mailto:sachin2605srs@gmail.com" class="btn btn-sm btn-primary">
+                    <span>Send Mail</span>
+                  </a>
+                  <button type="button" class="btn btn-sm btn-outline" id="copyEmailBtn" data-email="sachin2605srs@gmail.com" aria-label="Copy email address to clipboard">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copy Email</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card reveal">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Direct Phone</span>
+                <a href="tel:9514828377" class="contact-card-link">+91 9514828377</a>
+                <div class="contact-card-actions">
+                  <a href="tel:9514828377" class="btn btn-sm btn-primary">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>Call Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Connections Card -->
+            <div class="contact-card reveal">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Social & Professional Channels</span>
+                <p class="contact-subtext">Connect with me on developer networks and social profiles:</p>
+                <div class="social-pills-row">
+                  <a href="https://github.com/sachinsaravanan54" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/sachinsaravanan54/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://www.instagram.com/jeffy_forever_07/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram Profile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Mail Assistant (Client-Side, No Fake Form Submission) -->
+          <div class="contact-helper-box reveal">
+            <h3 class="helper-box-title">Start a Conversation</h3>
+            <p class="helper-box-desc">
+              Compose a quick message below and click "Open in Email Client". Your default email app will launch with these details pre-filled for easy sending to <strong>sachin2605srs@gmail.com</strong>.
+            </p>
+
+            <form id="mailHelperForm" class="helper-form" onsubmit="event.preventDefault();">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mailSubject" class="form-label">Subject</label>
+                <input type="text" id="mailSubject" class="form-input" placeholder="e.g. Project Inquiry / Full Stack Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mailMessage" class="form-label">Message</label>
+                <textarea id="mailMessage" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="button" id="launchMailClientBtn" class="btn btn-primary btn-block">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Open in Email Client</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       9. FOOTER
+       ============================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="brand-monogram">SS</span>
+            <span class="brand-text">Sachin Saravanan</span>
+          </a>
+          <p class="footer-headline">Aspiring Full Stack Developer | Data Analytics Enthusiast</p>
+          <p class="footer-college">B.Tech IT • Rathinam Technical Campus (2024–2028)</p>
+        </div>
+
+        <div class="footer-nav">
+          <span class="footer-nav-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-nav-title">Connect</span>
+          <div class="footer-social-row">
+            <a href="https://github.com/sachinsaravanan54" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sachinsaravanan54/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/jeffy_forever_07/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="mailto:sachin2605srs@gmail.com" class="social-icon-btn" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-email-text">
+            <a href="mailto:sachin2605srs@gmail.com">sachin2605srs@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Sachin Saravanan. Built with precision, performance & care.
+        </p>
+
+        <!-- Back to Top Button -->
+        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy actions -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
