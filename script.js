@@ -326,4 +326,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // -------------------------------------------------------------------------
+  // 11. Interactive 3D Pull-In & Tilt on Profile Frame
+  // -------------------------------------------------------------------------
+  const profileFrame = document.querySelector('.profile-frame');
+  const heroVisual = document.querySelector('.hero-visual');
+
+  if (profileFrame && heroVisual && !prefersReducedMotion) {
+    heroVisual.addEventListener('mousemove', (e) => {
+      const rect = profileFrame.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      const rotateX = -(y / (rect.height / 2)) * 12;
+      const rotateY = (x / (rect.width / 2)) * 12;
+      
+      profileFrame.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale(1.05)`;
+    });
+
+    heroVisual.addEventListener('mouseleave', () => {
+      profileFrame.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  }
+
 });
