@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=ocean">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -81,6 +81,9 @@
       </div>
     </nav>
   </header>
+
+  <!-- Fixed Ocean Parallax Background Layer for Down Slides (Hidden on First Page by Hero) -->
+  <div class="ocean-fixed-bg" aria-hidden="true"></div>
 
   <!-- Main Content Container -->
   <main id="main-content">
@@ -209,10 +212,13 @@
       </div>
     </section>
 
-    <!-- ==============================================
-         2. ABOUT ME SECTION
-         ============================================== -->
-    <section id="about" class="section about-section" aria-label="About Me Section">
+    <!-- Down Slides Container with Ocean Background (all sections except first page) -->
+    <div class="down-slides-wrapper">
+
+      <!-- ==============================================
+           2. ABOUT ME SECTION
+           ============================================== -->
+      <section id="about" class="section about-section" aria-label="About Me Section">
       <div class="container">
         <div class="section-header reveal">
           <div class="section-tag">
@@ -1218,6 +1224,7 @@
         </div>
       </div>
     </section>
+    </div> <!-- /.down-slides-wrapper -->
 
   </main>
 

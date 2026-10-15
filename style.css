@@ -196,7 +196,51 @@ code {
 }
 
 .section:nth-of-type(even) {
-  background-color: rgba(6, 14, 28, 0.45);
+  background-color: rgba(6, 14, 28, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   Fixed Ocean Background Layer (Visible on all down slides, hidden on first page)
+   -------------------------------------------------------------------------- */
+.ocean-fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(180deg, 
+      rgba(3, 9, 20, 0.50) 0%, 
+      rgba(4, 12, 26, 0.30) 25%, 
+      rgba(5, 15, 32, 0.28) 55%, 
+      rgba(3, 8, 18, 0.60) 100%
+    ),
+    url('assets/images/ocean-bg.jpg');
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Down Slides Wrapper */
+.down-slides-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+/* Smooth gradient feather blending hero into ocean down-slides */
+.down-slides-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  background: linear-gradient(180deg, rgba(6, 13, 24, 0.95) 0%, rgba(6, 13, 24, 0.6) 45%, transparent 100%);
+  pointer-events: none;
+  z-index: 3;
 }
 
 /* Section Header Typography */
@@ -530,6 +574,7 @@ code {
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
+  z-index: 5;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -538,6 +583,19 @@ code {
   background: linear-gradient(160deg, #060d18 0%, #0a192f 50%, #0d213f 100%);
   color: #ffffff;
   overflow: hidden;
+}
+
+/* Bottom feather blending hero into ocean down-slides */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 13, 24, 0.6) 50%, rgba(6, 13, 24, 0.98) 100%);
+  pointer-events: none;
+  z-index: 3;
 }
 
 /* Ambient glow orbs */
